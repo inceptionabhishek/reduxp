@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap");
+body {
+  background-color: #1b2430;
+  color: #51557e;
+}
+.Top-Heading-Title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #51557e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto Mono", monospace;
+}
+.Divider {
+  width: 100%;
+  height: 1px;
+  background-color: #51557e;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Selected-User-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.User-Image {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 30%;
+  background-color: #1b2430;
+  margin-bottom: 2rem;
+}
+.Selected-User {
+  font-weight: bold;
+  color: #51557e;
+  font-family: "Roboto Mono", monospace;
+  display: flex;
+}
+.Details {
+  margin-left: 20px;
+}
+.User-Button {
+  background-color: #1b2430;
+  color: #51557e;
+  font-family: "Roboto Mono", monospace;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 2rem;
+  cursor: pointer;
+  font-size: 20px;
+}
+.Loading-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+.Loading-Text {
+  font-weight: bold;
+  color: #51557e;
+  font-family: "Roboto Mono", monospace;
+  font-size: 20px;
+}
+
+.loader {
+  margin-top: 20px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #51557e;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
+@keyframes spin {
+  0% {
     transform: rotate(0deg);
   }
-  to {
+  100% {
     transform: rotate(360deg);
   }
 }
